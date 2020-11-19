@@ -11,7 +11,9 @@ from PIL import Image
 import time
 
 start = time.time()
-img = Image.open('img2.jpg')
+#img = Image.open('img2.jpg')
+val = input("Enter image")
+img = Image.open(val)
 img = img.convert("RGBA")
 datas = img.getdata()
 k=0
