@@ -13,7 +13,7 @@ import time
 start = time.time()
 #img = Image.open('img2.jpg')
 val = input("Enter image")
-img = Image.open(val)
+img = Image.open(str(val))
 img = img.convert("RGBA")
 datas = img.getdata()
 k=0
